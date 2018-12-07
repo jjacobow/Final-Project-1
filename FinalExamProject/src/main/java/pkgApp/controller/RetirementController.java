@@ -83,7 +83,7 @@ public class RetirementController implements Initializable {
 		LbLWhatYouNeedSaved.setText("Not a #");
 	}catch(Exception e) {
 		LbLSaveEachMonth.setText("Error");
-		LbLWhatYouNeedSaved.setText("Error");
+		LbLWhatYouNeedSaved.setText("Error"); 
 	}
 	}	
 }
