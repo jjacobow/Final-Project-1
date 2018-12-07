@@ -15,7 +15,7 @@ public class Retirement {
 	public int getiYearsToWork() {
 		return iYearsToWork;
 	}
-	public void setiYearsToWork(int iYearsToWork) {
+	public void setiYearsToWork(int iYearsToWork) { 
 		this.iYearsToWork = iYearsToWork;
 	}
 	public double getdAnnualReturnWorking() {

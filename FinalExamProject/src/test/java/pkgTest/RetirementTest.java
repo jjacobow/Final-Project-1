@@ -20,7 +20,7 @@ public class RetirementTest {
 		Freedom.setdAnnualReturnRetired(dAnnualReturn);
 		Freedom.setdRequiredIncome(dRequiredIncome);
 		Freedom.setdMonthlySSI(dSSIAmt);
-		assertEquals(dExpectedPV,Freedom.TotalAmountSaved(),0.05);
+		assertEquals(dExpectedPV,Freedom.TotalAmountSaved(),0.05); 
 	}
 	@Test
 	public void TestPMT() {
