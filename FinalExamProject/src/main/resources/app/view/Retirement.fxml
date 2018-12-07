@@ -78,8 +78,8 @@
             <TextField fx:id="txtAnnualReturnRetired" nodeOrientation="LEFT_TO_RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="7" />
             <TextField fx:id="txtRequiredIncome" nodeOrientation="LEFT_TO_RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="8" />
             <TextField fx:id="txtMonthlySSI" nodeOrientation="LEFT_TO_RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-            <Label fx:id="LbLSEM" GridPane.columnIndex="1" />
-            <Label fx:id="LbLNTS" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="LbLSavedEachMonth" GridPane.columnIndex="1" />
+            <Label fx:id="LbLWhatYouNeedSaved" GridPane.columnIndex="1" GridPane.rowIndex="4" />
          </children>
       </GridPane>
    </center>

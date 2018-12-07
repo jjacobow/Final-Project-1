@@ -3,8 +3,6 @@ import org.apache.poi.ss.formula.functions.*;
 
 public class Retirement {
 
-	
-
 	private int iYearsToWork;
 	private double dAnnualReturnWorking;
 	private int iYearsRetired;
@@ -12,9 +10,7 @@ public class Retirement {
 	private double dRequiredIncome;
 	private double dMonthlySSI;
 	
-	//TODO: Build the contructor, getters and setters for the attributes above.
 	public Retirement() {
-		
 	}
 	public int getiYearsToWork() {
 		return iYearsToWork;
@@ -54,21 +50,11 @@ public class Retirement {
 	}
 	public double AmountToSave()
 	{
-		//TODO: Determine the amount to save each month based on TotalAmountSaved, YearsToWork
-		//		and Annual return while working
-		
-		double answer = 0;
-		answer = FinanceLib.pmt(dAnnualReturnWorking/12, iYearsToWork*12, 0, TotalAmountSaved(), false);
-		return answer;
+		return FinanceLib.pmt(dAnnualReturnWorking/12, iYearsToWork*12, 0, TotalAmountSaved(), false);
 	}
 	
 	public double TotalAmountSaved()
 	{
-		//	TODO: Determine amount to be saved based on Monthly SSI, Required Income, Annual return during retirement
-		//		and number of years retired.
-		//
-		double answer = 0;
-		answer = FinanceLib.pv(dAnnualReturnRetired/12, iYearsRetired*12, dRequiredIncome-dMonthlySSI, 0, false);
-		return answer;
+		return FinanceLib.pv(dAnnualReturnRetired/12, iYearsRetired*12, dRequiredIncome-dMonthlySSI, 0, false);
 	}
 }
